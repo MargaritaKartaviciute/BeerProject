@@ -29,12 +29,20 @@ class BreweriesView(TemplateView):
             latitude = form.cleaned_data['latitude']
             self._service.route(latitude, longitude)
             results = self._service.breweries
+            all_distance = self._service.traveled_distance
+            beers = self._service.beer_types
+            distance_to_home = self._service.distance_to_home
+            execution_time = self._service.execution_time
             form = BreweriesForm()
 
         context = {
             'longitude': longitude,
             'latitude': latitude,
             'form': form,
-            'results': results
+            'results': results,
+            'total_distance': all_distance + distance_to_home,
+            'beers': beers,
+            'distance_to_home': distance_to_home,
+            'execution_time': execution_time
         }
         return render(request, self.template_name, context)

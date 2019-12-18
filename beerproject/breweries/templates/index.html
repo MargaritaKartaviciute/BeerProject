@@ -10,3 +10,10 @@ Hello, write your home coordinates!
 {% for coordinate in results %}
         <li>{{ coordinate.name }}: {{ coordinate.lat}}, {{ coordinate.lon}} {{ coordinate.distance | floatformat:2 }}km</li>
 {% endfor %}
+<li> HOME: {{latitude}}, {{ longitude }} {{ distance_to_home | floatformat:2 }}km</li>
+<h2>Beer types</h2>
+{% for beer in beers %}
+        <li>{{ beer }}</li>
+{% endfor %}
+<h3>{{ execution_time }} seconds</h3>
+<h2>Total distance: {{ total_distance | floatformat:2 }} km</h2>
