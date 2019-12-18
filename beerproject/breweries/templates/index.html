@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+Hello, write your home coordinates!
+<form  method="post">
+    {%  csrf_token  %}
+    {{ form.as_p }}
+    <button type="submit"> Search</button>
+</form>
+<h1>{{ latitude }} {{ longitude }}</h1>
+{% for coordinate in results %}
+        <li>{{ coordinate.name }}: {{ coordinate.lat}}, {{ coordinate.lon}} {{ coordinate.distance | floatformat:2 }}km</li>
+{% endfor %}
