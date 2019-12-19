@@ -6,6 +6,6 @@ class Categories(models.Model):
     last_mod = models.DateField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'categories'
         verbose_name_plural = "Categories"

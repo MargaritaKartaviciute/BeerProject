@@ -1,4 +1,4 @@
-from .models import Geocodes
+# from .models import Geocodes
 from django.shortcuts import render
 
 from django.views.generic import  TemplateView
@@ -12,11 +12,8 @@ class BreweriesView(TemplateView):
 
     def get(self, request):
 
-        # ReadData.read_csv_data()
-        coordinates = Geocodes.objects.all()
         form = BreweriesForm()
         context = {
-            'coordinates': coordinates,
             'form': form
         }
 

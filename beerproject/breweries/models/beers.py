@@ -9,6 +9,6 @@ class Beers(models.Model):
     name = models.CharField(max_length=255)
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'beers'
         verbose_name_plural = "Beers"

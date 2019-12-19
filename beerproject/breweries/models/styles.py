@@ -9,6 +9,6 @@ class Styles(models.Model):
     last_mod = models.DateField()
 
     class Meta:
-        managed = False
+        managed = True
         db_table = 'styles'
         verbose_name_plural = "Styles"
