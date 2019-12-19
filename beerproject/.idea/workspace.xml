@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="350acbc3-1f28-4fae-ac54-738ba60c2cce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/migrations/0002_delete_categories.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/migrations/0003_categories_styles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/models/beers.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/models/beers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/models/breweries.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/models/breweries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/models/categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/models/categories.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/models/geocodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/models/geocodes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breweries/models/styles.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/models/styles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/breweries/services/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/services/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,9 +195,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: breweries.tests.test_forms.BreweriesFormTest" />
-        <item itemvalue="Django tests.Test: breweries.tests.test_urls.TestUrls" />
         <item itemvalue="Django tests.Test: breweries.tests.test_views.TestViews" />
+        <item itemvalue="Django tests.Test: breweries.tests.test_urls.TestUrls" />
+        <item itemvalue="Django tests.Test: breweries.tests.test_forms.BreweriesFormTest" />
         <item itemvalue="Django tests.Test: breweries.tests.test_views.TestViews.test_breweries_post_without_csrf_token_check2" />
         <item itemvalue="Django tests.Test: breweries.tests.test_views.TestViews.test_breweries_post" />
       </list>
@@ -235,7 +228,7 @@
       <workItem from="1576684584062" duration="5642000" />
       <workItem from="1576691539744" duration="11225000" />
       <workItem from="1576743549987" duration="2381000" />
-      <workItem from="1576751109757" duration="3940000" />
+      <workItem from="1576751109757" duration="5474000" />
     </task>
     <servers />
   </component>
@@ -261,46 +254,46 @@
     </state>
     <state x="2244" y="440" width="1057" height="638" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576753587315" />
     <state x="2455" y="338" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576746696880" />
-    <state width="1874" height="423" key="GridCell.Tab.0.bottom" timestamp="1576755226840">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="2" key="GridCell.Tab.0.bottom" timestamp="1576756277309">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="404" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576751878576" />
-    <state width="1874" height="423" key="GridCell.Tab.0.center" timestamp="1576755226840">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="2" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756277309" />
+    <state width="1807" height="2" key="GridCell.Tab.0.center" timestamp="1576756277309">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="404" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576751878576" />
-    <state width="1874" height="423" key="GridCell.Tab.0.left" timestamp="1576755226840">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="2" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756277309" />
+    <state width="1807" height="2" key="GridCell.Tab.0.left" timestamp="1576756277309">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="404" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576751878575" />
-    <state width="1874" height="423" key="GridCell.Tab.0.right" timestamp="1576755226840">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="2" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756277309" />
+    <state width="1807" height="2" key="GridCell.Tab.0.right" timestamp="1576756277309">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="404" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576751878576" />
-    <state width="1874" height="2" key="GridCell.Tab.1.bottom" timestamp="1576755112199">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="2" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756277309" />
+    <state width="1807" height="362" key="GridCell.Tab.1.bottom" timestamp="1576756314842">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="429" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576701010696" />
-    <state width="1874" height="2" key="GridCell.Tab.1.center" timestamp="1576755112199">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="362" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756314842" />
+    <state width="1807" height="362" key="GridCell.Tab.1.center" timestamp="1576756314842">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="429" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576701010695" />
-    <state width="1874" height="2" key="GridCell.Tab.1.left" timestamp="1576755112199">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="362" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756314842" />
+    <state width="1807" height="362" key="GridCell.Tab.1.left" timestamp="1576756314842">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="429" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576701010695" />
-    <state width="1874" height="2" key="GridCell.Tab.1.right" timestamp="1576755112199">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1807" height="362" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756314842" />
+    <state width="1807" height="362" key="GridCell.Tab.1.right" timestamp="1576756314842">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="429" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576701010695" />
+    <state width="1807" height="362" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576756314842" />
     <state x="2569" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576743867250">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -318,6 +311,26 @@
           <line>33</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/breweries/tests/test_forms.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/breweries/services/services.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/breweries/services/services.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/breweries/services/services.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -328,10 +341,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_urls_TestUrls_test_index_url_is_resolved.coverage" NAME="Test: breweries.tests.test_urls.TestUrls.test_index_url_is_resolved Coverage Results" MODIFIED="1576746445322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_views_TestViews.coverage" NAME="Test: breweries.tests.test_views.TestViews Coverage Results" MODIFIED="1576755112151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_views_TestViews.coverage" NAME="Test: breweries.tests.test_views.TestViews Coverage Results" MODIFIED="1576756168282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_views_TestViews_test_breweries_post.coverage" NAME="Test: breweries.tests.test_views.TestViews.test_breweries_post Coverage Results" MODIFIED="1576752919672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_forms_BreweriesFormTest.coverage" NAME="Test: breweries.tests.test_forms.BreweriesFormTest Coverage Results" MODIFIED="1576755221584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_forms_BreweriesFormTest.coverage" NAME="Test: breweries.tests.test_forms.BreweriesFormTest Coverage Results" MODIFIED="1576756155601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_views_TestViews_test_breweries_post_without_csrf_token_check2.coverage" NAME="Test: breweries.tests.test_views.TestViews.test_breweries_post_without_csrf_token_check2 Coverage Results" MODIFIED="1576755067519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_urls_TestUrls.coverage" NAME="Test: breweries.tests.test_urls.TestUrls Coverage Results" MODIFIED="1576755127471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/beerproject$Test__breweries_tests_test_urls_TestUrls.coverage" NAME="Test: breweries.tests.test_urls.TestUrls Coverage Results" MODIFIED="1576756162294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

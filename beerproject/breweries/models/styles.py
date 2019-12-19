@@ -4,7 +4,7 @@ from .categories import Categories
 
 
 class Styles(models.Model):
-    cat = models.ForeignKey(Categories, models.DO_NOTHING, blank=True, null=True)
+    cat_id = models.ForeignKey(Categories, models.DO_NOTHING, blank=True, null=True)
     style_name = models.CharField(max_length=255)
     last_mod = models.DateField()
 
