@@ -25,6 +25,7 @@ class BreweriesView(TemplateView):
         if form.is_valid():
             longitude = form.cleaned_data['longitude']
             latitude = form.cleaned_data['latitude']
+
             service.route(latitude, longitude)
             results = service.breweries
             all_distance = service.traveled_distance
@@ -33,15 +34,23 @@ class BreweriesView(TemplateView):
             execution_time = service.execution_time
             form = BreweriesForm()
 
-        context = {
-            'longitude': longitude,
-            'latitude': latitude,
-            'form': form,
-            'results': results,
-            'total_distance': all_distance + distance_to_home,
-            'beers': beers,
-            'distance_to_home': distance_to_home,
-            'execution_time': execution_time,
-            'breweries_count': len(results) - 2
-        }
-        return render(request, self.post_template, context)
+            context = {
+                'longitude': longitude,
+                'latitude': latitude,
+                'form': form,
+                'results': results,
+                'total_distance': all_distance + distance_to_home,
+                'beers': beers,
+                'distance_to_home': distance_to_home,
+                'execution_time': execution_time,
+                'breweries_count': len(results) - 2
+            }
+            template = self.post_template
+        else:
+            form = BreweriesForm()
+            context = {
+                'form': form
+            }
+            template = self.template_name
+
+        return render(request, template, context)

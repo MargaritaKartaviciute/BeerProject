@@ -4,6 +4,7 @@ h1 {
 }
 h2{
     color: #004d00;
+    margin-bottom: 30px;
 }
 .align{
     text-align: center;
@@ -14,10 +15,17 @@ h2{
   border: 3px solid green;
   padding: 10px 10px 10px 10px;
 }
+.button{
+    border: 3px solid green;
+    margin-top: 30px;
+}
 .column {
   float: left;
   width: 50%;
   padding: 10px;
+}
+.column_span{
+    width: 100%;
 }
 
 /* Clear floats after the columns */

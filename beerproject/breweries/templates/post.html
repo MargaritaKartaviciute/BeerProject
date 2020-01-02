@@ -10,16 +10,17 @@
             <h2>Breweries</h2>
             <ul class="list-group list-group-flush">
                 {% for coordinate in results %}
+
                 <li class="list-group-item d-flex justify-content-between ">{{ coordinate.name }}
-                    <span class="badge badge-secondary badge-pill">lat: {{ coordinate.lat}} lng: {{ coordinate.lon}}</span>
-                    <span class="badge badge-success badge-pill">{{ coordinate.distance | floatformat:2 }}km</span>
+                    <div class="row">
+                        <span class="badge badge-secondary column_span">lat: {{ coordinate.lat}} lng: {{ coordinate.lon}}</span>
+                        <span class="badge badge-success column_span">{{ coordinate.distance | floatformat:2 }}km</span>
+                    </div>
+
+
                 </li>
 
                 {% endfor %}
-{#                 <li class="list-group-item d-flex justify-content-between ">HOME#}
-{#                    <span class="badge badge-secondary badge-pill">lat: {{latitude}} lng: {{ longitude }}</span>#}
-{#                    <span class="badge badge-success badge-pill">{{ distance_to_home | floatformat:2 }}km</span>#}
-{#                </li>#}
             </ul>
         {% else %}
             <h3>You do not have enough fuel to visit brewery!</h3>

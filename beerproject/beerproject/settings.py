@@ -80,11 +80,8 @@ DATABASES = {
         'NAME': 'beerproject',
         'USER': 'user',
         'PASSWORD': 'password',
-        # 'HOST': 'database',   # Or an IP Address that your DB is hosted on
-        # 'PORT': 3306,
-        'HOST': '',   # Or an IP Address that your DB is hosted on
-        'PORT': '',
-
+        'HOST': 'database',   # Or an IP Address that your DB is hosted on
+        'PORT': 3306,
     }
 }
 
