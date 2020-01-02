@@ -35,6 +35,15 @@ class BreweriesService:
 
         self.__find_brewery(self.home_lat, self.home_lon)
 
+        place = {
+            'lat': self.home_lat,
+            'lon': self.home_lon,
+            'coordinate_id': -1,
+            'name': "HOME",
+            'distance': self.distance_to_home
+        }
+        self.breweries.append(place)
+
         self.execution_time = time.time() - start_time
 
 

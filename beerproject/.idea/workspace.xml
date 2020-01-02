@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="350acbc3-1f28-4fae-ac54-738ba60c2cce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beerproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/beerproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breweries/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/breweries/services/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/services/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/breweries/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/templates/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/breweries/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/breweries/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +230,7 @@
       <workItem from="1576743549987" duration="2381000" />
       <workItem from="1576751109757" duration="6715000" />
       <workItem from="1577868470217" duration="9271000" />
-      <workItem from="1577956965500" duration="2406000" />
+      <workItem from="1577956965500" duration="7822000" />
     </task>
     <servers />
   </component>
@@ -258,46 +256,46 @@
     </state>
     <state x="2244" y="440" width="1057" height="638" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576753587315" />
     <state x="2455" y="338" width="424" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576759578595" />
-    <state width="1807" height="288" key="GridCell.Tab.0.bottom" timestamp="1577961877962">
+    <state width="1807" height="411" key="GridCell.Tab.0.bottom" timestamp="1577966452691">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="288" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577961877962" />
-    <state width="1807" height="288" key="GridCell.Tab.0.center" timestamp="1577961877962">
+    <state width="1807" height="411" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966452691" />
+    <state width="1807" height="411" key="GridCell.Tab.0.center" timestamp="1577966452691">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="288" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577961877962" />
-    <state width="1807" height="288" key="GridCell.Tab.0.left" timestamp="1577961877962">
+    <state width="1807" height="411" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966452691" />
+    <state width="1807" height="411" key="GridCell.Tab.0.left" timestamp="1577966452690">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="288" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577961877962" />
-    <state width="1807" height="288" key="GridCell.Tab.0.right" timestamp="1577961877962">
+    <state width="1807" height="411" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966452690" />
+    <state width="1807" height="411" key="GridCell.Tab.0.right" timestamp="1577966452691">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="423" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755226840" />
-    <state width="1807" height="288" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577961877962" />
-    <state width="1807" height="362" key="GridCell.Tab.1.bottom" timestamp="1576759582828">
+    <state width="1807" height="411" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966452691" />
+    <state width="1807" height="411" key="GridCell.Tab.1.bottom" timestamp="1577966455287">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="362" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576759582828" />
-    <state width="1807" height="362" key="GridCell.Tab.1.center" timestamp="1576759582828">
+    <state width="1807" height="411" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966455287" />
+    <state width="1807" height="411" key="GridCell.Tab.1.center" timestamp="1577966455287">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="362" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576759582828" />
-    <state width="1807" height="362" key="GridCell.Tab.1.left" timestamp="1576759582828">
+    <state width="1807" height="411" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966455287" />
+    <state width="1807" height="411" key="GridCell.Tab.1.left" timestamp="1577966455287">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="362" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576759582828" />
-    <state width="1807" height="362" key="GridCell.Tab.1.right" timestamp="1576759582828">
+    <state width="1807" height="411" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966455287" />
+    <state width="1807" height="411" key="GridCell.Tab.1.right" timestamp="1577966455287">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="2" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1576755112199" />
-    <state width="1807" height="362" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1576759582828" />
+    <state width="1807" height="411" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1577966455287" />
     <state x="2569" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1577956968063">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -324,7 +322,12 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
-        <watch expression="possible_distances[85]" language="Python" />
+        <watch expression="id" language="Python" />
+        <watch expression="self.brew_ids" language="Python" />
+        <watch expression="coordinate" language="Python" />
+        <watch expression="self.breweries" language="Python" />
+        <watch expression="self.traveled_distance" language="Python" />
+        <watch expression="self.beer_types" language="Python" />
       </configuration>
     </watches-manager>
   </component>
