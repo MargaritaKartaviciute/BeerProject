@@ -15,10 +15,10 @@ Using home coordinates:
 
 - > `lat = 51.742503 lng = 19.432956`
 
-Expected results: 
-> Total distance: 1994.40km;Visited 19 breweries and tried 52 beer types;
+    Expected results: 
+    > Total distance: 1994.40km;Visited 19 breweries and tried 52 beer types;
 
 - > `lat = 51.355468 lng = 11.100790`
 
-Expected results: 
-> Total distance: 1631.35km;Visited 12 breweries and tried 26 beer types;
+    Expected results: 
+    > Total distance: 1631.35km;Visited 12 breweries and tried 26 beer types;
