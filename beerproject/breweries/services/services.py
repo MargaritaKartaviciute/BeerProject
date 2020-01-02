@@ -4,6 +4,7 @@ import time
 from haversine import haversine, Unit
 import numpy as np
 
+
 class BreweriesService:
     def __init__(self):
         self.traveled_distance = 0
