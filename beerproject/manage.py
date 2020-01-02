@@ -6,6 +6,7 @@ import csv
 import datetime
 
 import mysql.connector
+from django.conf import settings
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'beerproject.settings')
@@ -223,11 +224,17 @@ def read_beers_data():
 
 
 def convert():
+
+    host = settings.DATABASES['default']['HOST']
+    user = settings.DATABASES['default']['USER']
+    password = settings.DATABASES['default']['PASSWORD']
+    database = settings.DATABASES['default']['NAME']
+
     mydb = mysql.connector.connect(
-        host="",
-        user="user",
-        database='beerproject',
-        passwd="password"
+        host=host,
+        user=user,
+        database=database,
+        passwd=password
     )
     mycursor = mydb.cursor()
     categories(mycursor, mydb)
@@ -238,8 +245,8 @@ def convert():
 
 
 if __name__ == '__main__':
-    convert()
     main()
+    convert()
 
 
 

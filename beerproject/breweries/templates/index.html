@@ -1,19 +1,20 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-Hello, write your home coordinates!
-<form  method="post">
-    {%  csrf_token  %}
-    {{ form.as_p }}
-    <button type="submit"> Search</button>
-</form>
-<h1>{{ latitude }} {{ longitude }}</h1>
-{% for coordinate in results %}
-        <li>{{ coordinate.name }}: {{ coordinate.lat}}, {{ coordinate.lon}} {{ coordinate.distance | floatformat:2 }}km</li>
-{% endfor %}
-<li> HOME: {{latitude}}, {{ longitude }} {{ distance_to_home | floatformat:2 }}km</li>
-<h2>Beer types</h2>
-{% for beer in beers %}
-        <li>{{ beer }}</li>
-{% endfor %}
-<h3>{{ execution_time }} seconds</h3>
-<h2>Total distance: {{ total_distance | floatformat:2 }} km</h2>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <div class="center align">
+            <h2>Hello, write your home coordinates!</h2>
+            <form  method="post" >
+                {%  csrf_token  %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-success"> Search</button>
+            </form>
+        </div>
+        </body>
+</html>
+
+
+

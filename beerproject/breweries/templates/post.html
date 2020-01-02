@@ -1,0 +1,44 @@
+{% load static %}
+  {% include 'index.html' %}
+<div class="center">
+    <div>
+        <h1 class="align">Total travel distance from home (lat: {{ latitude }} lng: {{ longitude }} ) is - {{ total_distance | floatformat:2 }} km</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+        {% if results %}
+            <h2>Breweries</h2>
+            <ul class="list-group list-group-flush">
+                {% for coordinate in results %}
+                <li class="list-group-item d-flex justify-content-between ">{{ coordinate.name }}
+                    <span class="badge badge-secondary badge-pill">lat: {{ coordinate.lat}} lng: {{ coordinate.lon}}</span>
+                    <span class="badge badge-success badge-pill">{{ coordinate.distance | floatformat:2 }}km</span>
+                </li>
+
+                {% endfor %}
+                 <li class="list-group-item d-flex justify-content-between ">HOME
+                    <span class="badge badge-secondary badge-pill">lat: {{latitude}} lng: {{ longitude }}</span>
+                    <span class="badge badge-success badge-pill">{{ distance_to_home | floatformat:2 }}km</span>
+                </li>
+            </ul>
+        {% else %}
+            <h3>You do not have enough fuel to visit brewery!</h3>
+        {% endif %}
+    </div>
+    <div class="column">
+        {% if beers %}
+            <h2>Beer types</h2>
+            <ul class="list-group list-group-flush">
+                {% for beer in beers %}
+                    <li class="list-group-item">{{ beer }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <h3>You would not able to find any beer!</h3>
+        {% endif %}
+    </div>
+    </div>
+    <h2 class="align">Visited {{results | length}} breweries and  tried {{ beers | length }} beer types</h2>
+    <h6 class="align">It took {{ execution_time | floatformat:4}} seconds to find breweries.</h6>
+</div>
+

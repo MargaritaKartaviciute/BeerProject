@@ -8,6 +8,7 @@ from .services import BreweriesService
 
 class BreweriesView(TemplateView):
     template_name = 'index.html'
+    post_template = 'post.html'
     _service = BreweriesService()
 
     def get(self, request):
@@ -42,4 +43,4 @@ class BreweriesView(TemplateView):
             'distance_to_home': distance_to_home,
             'execution_time': execution_time
         }
-        return render(request, self.template_name, context)
+        return render(request, self.post_template, context)

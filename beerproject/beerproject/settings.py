@@ -25,7 +25,7 @@ SECRET_KEY = 'ioeoc3n&xjj@qi*^34hs8*%8369r7f**9midl9y6au57%uagq5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,14 +77,13 @@ WSGI_APPLICATION = 'beerproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # 'OPTIONS': {
-        #     'read_default_file': '/etc/mysql/my.cnf',
-        # },
         'NAME': 'beerproject',
         'USER': 'user',
         'PASSWORD': 'password',
-        'HOST': '',   # Or an IP Address that your DB is hosted on
-        'PORT': '',
+        'HOST': 'database',   # Or an IP Address that your DB is hosted on
+        'PORT': 3306,
+        # 'HOST': '',   # Or an IP Address that your DB is hosted on
+        # 'PORT': '',
 
     }
 }
